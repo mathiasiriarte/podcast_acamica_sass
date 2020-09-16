@@ -64,17 +64,19 @@ iframe {
     min-height: 400px;
 }
 
-.phoneLogo {
-    width: 457.6px;
-    max-width: 100%;
-    margin-left: 20px;
+@media screen and (min-width: 769px) {
+    .phoneLogo {
+        width: 457.6px;
+        max-width: 100%;
+        margin-left: 20px;
+    }
 }
-
 
 /* -- SECTION 4 -- */ 
 
 .guestsImgs {
-    width: 100%;
+    // width: 100%;
+    margin-top: -5px;
 }
 
 @media screen and (min-width: 769px) {
@@ -100,6 +102,14 @@ iframe {
     }
 }
 /* -- SECTION 5 -- */ 
+
+.containerMore {
+    text-align: center;
+}
+
+// .pStyle {
+//     max-width: 288px;
+// }
 
 @media screen and (min-width: 769px) {
     .containerMore {
