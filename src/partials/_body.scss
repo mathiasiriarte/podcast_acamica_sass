@@ -1,0 +1,102 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 3rem;
+    color: #060A24;
+    letter-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+/* -- SKEW HORIZONTAL -- */
+
+.episodesContainer {
+    background-image: linear-gradient(225deg, blue 0%, #0000A3 100%);
+    max-width: 100%;
+    clip-path: polygon(0 5%, 100% 0%, 100% 97%, 0% 100%);
+    padding-top: 127px;
+    padding-bottom: 143.5px;
+}
+
+@media screen and (min-width: 769px) {
+    .episodesContainer {
+        background-image: linear-gradient(225deg, blue 0%, #0000A3 100%);
+        max-width: 100%;
+        clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+        padding-top: 186px;
+        padding-bottom: 232.6px;
+    }
+}
+
+.containerNews {
+    background-image: linear-gradient(225deg, blue 0%, #0000A3 100%);
+    max-width: 100%;
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    padding-top: 64px;
+    padding-bottom: 67px;
+}
+
+@media screen and (min-width: 769px) {
+    .containerNews {
+        background-image: linear-gradient(225deg, blue 0%, #0000A3 100%);
+        max-width: 100%;
+        clip-path: polygon(0 22%, 100% 0%, 100% 100%, 0% 100%);
+        padding-top: 213px;
+        padding-bottom: 151px;
+    }
+}
+/* -- BUTTON -- */
+
+button {
+    font-family: 'IBM Plex Mono', medium;
+    background: #00F3BB;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px;
+    border: none;
+    padding: 16px 59px;
+}
+
+button:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    font-family: 'IBM Plex Mono', medium;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px;
+}

@@ -1,0 +1,142 @@
+/* -- SECTION 1 -- */
+
+h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 4rem;
+    color: #060A24;
+    letter-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
+
+.blueDot {
+    color: #0000EC;
+}
+
+.pSize1 {
+    max-width: 628px;
+}
+
+/* -- SECTION 2 -- */
+
+.h2White {
+    color: $h2-white;
+    margin-bottom: 26px;
+}
+
+.iframeContainer {
+    display: flex;
+    flex-direction: column;
+}
+iframe {
+    width: auto;
+    max-width: 100%;
+    margin: 11px;
+}
+
+@media screen and (min-width: 769px) {
+
+    .iframeContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    iframe {
+        margin-bottom: 72px;
+        margin-left: 50px;
+        width: 584px;
+        min-height: 232px;
+    }
+}
+
+/* -- SECTION 3 -- */ 
+.containerAbout {
+    position: relative;
+}
+.phoneImg {
+    position: absolute;
+    top: -200px;
+    min-height: 400px;
+}
+
+.phoneLogo {
+    width: 457.6px;
+    max-width: 100%;
+    margin-left: 20px;
+}
+
+
+/* -- SECTION 4 -- */ 
+
+.guestsImgs {
+    width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+    
+    .guestsImgs {
+        width: 33.3%;
+    }
+
+    .gridGuests {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .guests1 {
+        display: flex;
+        grid-column: 1/4;
+    }
+
+    .guests2 {
+        display: flex;
+        grid-column: 1/4;
+    }
+}
+/* -- SECTION 5 -- */ 
+
+@media screen and (min-width: 769px) {
+    .containerMore {
+        display: flex;
+    }
+
+    #section5 .containerMore {
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        margin-top: 69px;
+        margin-bottom: 34px;
+    }
+
+    .pStyle {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #060A24;
+        letter-spacing: 0;
+        text-align: center;
+        display: block;
+        max-width: 220px;
+    }
+}
+/* -- SECTION 6 -- */ 
+
+.h2White2 {
+    color: $h2-white;
+    margin-bottom: 36px;
+}
+
+.h2Center {
+    text-align: center;
+}
+
+.button2 {
+    margin-top: 0.9%;
+    text-align: center;
+}
