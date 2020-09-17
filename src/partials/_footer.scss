@@ -1,8 +1,26 @@
-footer .containerFooter {
-    justify-content: space-between;
-    align-items: center;
+.containerFooter p{
+    text-align: center;
+    font-size: 1.4rem;
 }
 
-.containerFooter {
+.footerFlexbox ul {
     display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding-inline-start: 0px;
+}
+
+@media screen and (min-width: 769px) {
+    
+    .containerFooter {
+        display: flex;
+    }
+
+    footer .containerFooter {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .fab {
+        padding-right: 36px;
+    }
 }
