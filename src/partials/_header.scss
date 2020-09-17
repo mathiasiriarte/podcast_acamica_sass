@@ -6,6 +6,7 @@ header {
     height: 45px;
     top: 0;
     padding: 10px 5%;
+    margin-bottom: 39px;
 }
 
 header .mainLogo {
@@ -40,7 +41,7 @@ header nav .navigationContainer  ul li:hover {
 header nav .navigationContainer ul li a {
     position: relative;
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
     padding: 16px 5%;
     line-height: 28px;
     display: block;
@@ -53,7 +54,7 @@ header nav .navigationContainer  ul li a:hover {
     input {
         &:checked ~ ul{
             background: #0000EC;
-            height: 240px;
+            height: 224px;
             transform: translateX(0);
             transition: transform 0.5s ease-in-out;
         }
@@ -80,7 +81,7 @@ header nav .navigationContainer span {
     height: 2.5px;
     margin-bottom: 6.5px;
     position: relative;
-    background: #000;
+    background: #060A24;
     z-index: 1;
     transform-origin: 3px 0px;
     transition: transform 0.5s ease,
@@ -125,14 +126,32 @@ header nav .navigationContainer input:checked ~ span:nth-last-child(2) {
 }
 
 .mainLogo {
-    width: 36px;
+    width: 24px;
 }
-
 
 /* -- nav desktop -- */
 
 @media screen and (min-width: 769px) {
     
+    .cleanList {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .cleanList li {
+        display: inline-block;
+        padding-left: 48px;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 1rem;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 28px;
+    }
+    
+    .mainLogo {
+        width: 36px;
+    }
+
     .navContainer {
         display: flex;
     }
