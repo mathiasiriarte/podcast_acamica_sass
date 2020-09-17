@@ -2,7 +2,7 @@
 
 header {
     width: 100%;
-    position: sticky;
+    position: inherit;
     height: 45px;
     top: 0;
     padding: 10px 5%;
@@ -20,14 +20,14 @@ header nav {
 header nav .navigationContainer ul {
     width: 100%;
     position: absolute;
-    // top: 45px;
+    top: 45px;
     top: 0;
     right: 0;
     padding-top: 45px;
     overflow: hidden;
     list-style: none;
     background: #f2f2f2;
-    // height: 0px;
+    height: 0px;
     height: 100vh;
     transform: translateX(-100%);
     transition: transform 0.5s ease;
@@ -63,7 +63,7 @@ header nav .navigationContainer  ul li a:hover {
 }
 
 header nav .navigationContainer {
-    padding-top: 3px;
+    padding-top: 2px;
 }
 
 header nav .navigationContainer input {
@@ -108,41 +108,46 @@ header nav .navigationContainer input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(1px, 0px);
 }
 
-/* -- FIN MENU HAMBURGUESA -- */
 
 .cleanList {
-    list-style: none;
-    padding-left: 0;
-}
-
-.cleanList li {
-    display: inline-block;
-    padding-left: 48px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 1rem;
-    color: #060A24;
-    letter-spacing: 0;
-    line-height: 28px;
-}
-
-.mainLogo {
-    width: 24px;
-}
-
-/* -- nav desktop -- */
-
-@media screen and (min-width: 769px) {
-    
-    .cleanList {
         list-style: none;
         padding-left: 0;
     }
     
     .cleanList li {
-        display: inline-block;
-        padding-left: 48px;
-        font-family: 'IBM Plex Mono', monospace;
-        font-size: 1rem;
+            display: inline-block;
+            padding-left: 48px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 1rem;
+            color: #060A24;
+            letter-spacing: 0;
+    line-height: 28px;
+}
+
+.mainLogo {
+        width: 24px;
+    }
+    
+    /* -- FIN MENU HAMBURGUESA -- */
+
+    /* -- nav desktop -- */
+    
+    @media screen and (min-width: 769px) {
+        
+        header nav img {
+            float: none;
+        }
+
+        .cleanList {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .cleanList li {
+            display: inline-block;
+            padding-left: 48px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 1rem;
         color: #060A24;
         letter-spacing: 0;
         line-height: 28px;
@@ -165,37 +170,45 @@ header nav .navigationContainer input:checked ~ span:nth-last-child(2) {
         align-items: center;
     }
 
-    header nav .menu ul {
-        position: relative;
-        top: 0;
-        right: 0;
-        overflow: hidden;
-        background: unset;
-        height: unset;
-    }
-
-    header nav .menu  ul li {
-        padding: 5px 10px;
-        display: inline-block;
-    } 
-    header nav .menu  ul li:hover {
-        background: unset;
-        border-bottom: 2px solid black;
-    } 
-    header nav .menu ul li a {
-        padding: unset;
-        line-height: unset;
-    }
-    header nav .menu  ul li a:hover {
-        color: unset;
-    } 
-    header nav .menu input {
-      display: none;
-    }
-
-    header nav .navigationContainer span {
+    header .navContainer nav .navigationContainer input {
         display: none;
       }
+
+    header .navContainer nav .navigationContainer span {
+        display: none;
+      }
+
+    // header nav .menu ul {
+    //     position: relative;
+    //     top: 0;
+    //     right: 0;
+    //     overflow: hidden;
+    //     background: unset;
+    //     height: unset;
+    // }
+
+    // header nav .menu  ul li {
+    //     padding: 5px 10px;
+    //     display: inline-block;
+    // } 
+    // header nav .menu  ul li:hover {
+    //     background: unset;
+    //     border-bottom: 2px solid black;
+    // } 
+    // header nav .menu ul li a {
+    //     padding: unset;
+    //     line-height: unset;
+    // }
+    // header nav .menu  ul li a:hover {
+    //     color: unset;
+    // } 
+    // header nav .menu input {
+    //   display: none;
+    // }
+
+    // header nav .navigationContainer span {
+    //     display: none;
+    //   }
 }
 /* -- ENLACES -- */
 
