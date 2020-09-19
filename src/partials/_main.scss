@@ -140,6 +140,20 @@ span.spanText {
     display: block;
 }
 
+.pStyle {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    display: block;
+}
+
+.moreContent {
+    margin-top: 65px;
+}
+
 @media screen and (min-width: 769px) {
 
     #section5 {
