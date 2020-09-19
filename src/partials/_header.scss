@@ -1,158 +1,158 @@
 /* -- MENU HAMBURGUESA -- */
-
-header {
-    width: 100%;
-    position: inherit;
-    height: 45px;
-    top: 0;
-    padding: 10px 5%;
-    margin-bottom: 39px;
-}
-
-header .mainLogo {
-    float: left;
-}
-
-header nav {
-    float: right;
-}
-
-header nav .navigationContainer ul {
-    width: 100%;
-    position: absolute;
-    top: 45px;
-    top: 0;
-    right: 0;
-    padding-top: 45px;
-    overflow: hidden;
-    list-style: none;
-    background: #f2f2f2;
-    height: 0px;
-    height: 100vh;
-    transform: translateX(-100%);
-    transition: transform 0.5s ease;
-}
-header nav .navigationContainer  ul li {
-    position: relative;
-} 
-header nav .navigationContainer  ul li:hover {
-    background: #5a5a5a;
-} 
-header nav .navigationContainer ul li a {
-    position: relative;
-    text-decoration: none;
-    color: #ffffff;
-    padding: 16px 5%;
-    line-height: 28px;
-    display: block;
-}
-header nav .navigationContainer  ul li a:hover {
-    color: #fff;
-}
-
-.navigationContainer {
-    input {
-        &:checked ~ ul{
-            background: #0000EC;
-            height: 224px;
-            transform: translateX(0);
-            transition: transform 0.5s ease-in-out;
-        }
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        position: inherit;
+        height: 45px;
+        top: 0;
+        padding: 10px 5%;
+        margin-bottom: 39px;
     }
 
-}
+    header .mainLogo {
+        float: left;
+    }
 
-header nav .navigationContainer {
-    padding-top: 2px;
-}
+    header nav {
+        float: right;
+    }
 
-header nav .navigationContainer input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    opacity: 0;
-    z-index: 2;
-    position: absolute;
-}
-
-header nav .navigationContainer span {
-    display: block;
-    width: 25px;
-    height: 2.5px;
-    margin-bottom: 6.5px;
-    position: relative;
-    background: #060A24;
-    z-index: 1;
-    transform-origin: 3px 0px;
-    transition: transform 0.5s ease,
-    opacity 0.55s ease;
-}
-
-header nav .navigationContainer span:first-child {
-    transform-origin: 0% 0%;
-}
-
-header nav .navigationContainer span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-}
-
-header nav .navigationContainer input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(2px, 1px);
-}
-header nav .navigationContainer input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-}
-header nav .navigationContainer input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(1px, 0px);
-}
-
-
-.cleanList {
+    header nav .navigationContainer ul {
+        width: 100%;
+        position: absolute;
+        top: 45px;
+        top: 0;
+        right: 0;
+        padding-top: 45px;
+        overflow: hidden;
         list-style: none;
-        padding-left: 0;
+        // background: #f2f2f2;
+        height: 0px;
+        height: 100vh;
+        transform: translateY(-100%);
+        transition: transform 0.5s ease;
     }
-    
-    .cleanList li {
-            display: inline-block;
-            padding-left: 48px;
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 1rem;
-            color: #060A24;
-            letter-spacing: 0;
-    line-height: 28px;
-}
-
-.mainLogo {
-        width: 24px;
+    header nav .navigationContainer  ul li {
+        position: relative;
+    } 
+    header nav .navigationContainer  ul li:hover {
+        background: #5a5a5a;
+    } 
+    header nav .navigationContainer ul li a {
+        position: relative;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 16px 5%;
+        line-height: 28px;
+        display: block;
     }
-    
-    /* -- FIN MENU HAMBURGUESA -- */
+    header nav .navigationContainer  ul li a:hover {
+        color: #fff;
+    }
 
-    /* -- nav desktop -- */
-    
-    @media screen and (min-width: 769px) {
-        
-        header nav img {
-            float: none;
+    .navigationContainer {
+        input {
+            &:checked ~ ul{
+                background: #0000EC;
+                height: 224px;
+                transform: translateX(0);
+                transition: transform 0.5s ease-in-out;
+                margin-top: 50px;
+            }
         }
 
-        .cleanList {
+    }
+
+    header nav .navigationContainer {
+        padding-top: 2px;
+    }
+
+    header nav .navigationContainer input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        opacity: 0;
+        z-index: 2;
+        position: absolute;
+    }
+
+    header nav .navigationContainer span {
+        display: block;
+        width: 25px;
+        height: 2.5px;
+        margin-bottom: 6.5px;
+        position: relative;
+        background: #060A24;
+        z-index: 1;
+        transform-origin: 3px 0px;
+        transition: transform 0.5s ease,
+        opacity 0.55s ease;
+    }
+
+    header nav .navigationContainer span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    header nav .navigationContainer span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    header nav .navigationContainer input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(2px, 1px);
+    }
+    header nav .navigationContainer input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    header nav .navigationContainer input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(1px, 0px);
+    }
+
+    .cleanList {
             list-style: none;
             padding-left: 0;
         }
         
         .cleanList li {
-            display: inline-block;
-            padding-left: 48px;
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 1rem;
+                display: inline-block;
+                padding-left: 48px;
+                font-family: 'IBM Plex Mono', monospace;
+                font-size: 1rem;
+                color: #060A24;
+                letter-spacing: 0;
+        line-height: 28px;
+    }
+
+    .mainLogo {
+            width: 24px;
+        }
+}    
+    /* -- FIN MENU HAMBURGUESA -- */
+
+    /* -- nav desktop -- */
+    
+@media screen and (min-width: 769px) {
+    
+    header nav img {
+        float: none;
+    }
+
+    .cleanList {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .cleanList li {
+        display: inline-block;
+        padding-left: 48px;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 1rem;
         color: #060A24;
         letter-spacing: 0;
         line-height: 28px;
     }
-    
+
     .mainLogo {
         width: 36px;
     }
@@ -160,11 +160,11 @@ header nav .navigationContainer input:checked ~ span:nth-last-child(2) {
     .navContainer {
         display: flex;
     }
-    
+
     header {
         padding: 22px 50px 120px 50px;
     }
-    
+
     header .navContainer {
         justify-content: space-between;
         align-items: center;
@@ -172,12 +172,12 @@ header nav .navigationContainer input:checked ~ span:nth-last-child(2) {
 
     header .navContainer nav .navigationContainer input {
         display: none;
-      }
+        }
 
     header .navContainer nav .navigationContainer span {
         display: none;
-      }
-
+        }
+}
     // header nav .menu ul {
     //     position: relative;
     //     top: 0;
@@ -209,7 +209,7 @@ header nav .navigationContainer input:checked ~ span:nth-last-child(2) {
     // header nav .navigationContainer span {
     //     display: none;
     //   }
-}
+
 /* -- ENLACES -- */
 
 a:link {

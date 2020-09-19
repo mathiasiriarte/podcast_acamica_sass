@@ -1,26 +1,32 @@
 /* -- SECTION 1 -- */
 
-h1 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 4rem;
-    color: #060A24;
-    letter-spacing: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-}
+@media screen and (min-width: 769px) {
 
-.lineThrough {
-    text-decoration: line-through;
-}
+    #section1 {
+        margin-bottom: 5px;
+    }
 
-.blueDot {
-    color: #0000EC;
-}
+    h1 {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 4rem;
+        color: #060A24;
+        letter-spacing: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
-.pSize1 {
-    max-width: 628px;
-}
+    .lineThrough {
+        text-decoration: line-through;
+    }
 
+    .blueDot {
+        color: #0000EC;
+    }
+
+    .pSize1 {
+        max-width: 628px;
+    }
+}
 /* -- SECTION 2 -- */
 
 .h2White {
@@ -40,6 +46,10 @@ iframe {
 
 @media screen and (min-width: 769px) {
 
+    #section2 {
+        margin-bottom: 20.4px;
+    }
+
     .iframeContainer {
         display: flex;
         flex-direction: row;
@@ -54,7 +64,8 @@ iframe {
     }
 }
 
-/* -- SECTION 3 -- */ 
+/* -- SECTION 3 -- */
+
 .containerAbout {
     position: relative;
 }
@@ -65,6 +76,20 @@ iframe {
 }
 
 @media screen and (min-width: 769px) {
+
+    #section3 {
+        margin-bottom: 64px;
+    }
+
+    .containerAbout {
+        position: relative;
+    }
+    .phoneImg {
+        position: relative;
+        top: -195px;
+        // min-height: 400px;
+    }
+
     .phoneLogo {
         width: 457.6px;
         max-width: 100%;
@@ -80,7 +105,11 @@ iframe {
 }
 
 @media screen and (min-width: 769px) {
-    
+
+    #section4 {
+        margin-bottom: 64px;
+    }
+
     .guestsImgs {
         width: 33.3%;
     }
@@ -112,6 +141,11 @@ span.spanText {
 }
 
 @media screen and (min-width: 769px) {
+
+    #section5 {
+        margin-bottom: 34px;
+    }
+
     .containerMore {
         display: flex;
     }
@@ -141,4 +175,26 @@ span.spanText {
 .button2 {
     margin-top: 0.9%;
     text-align: center;
+}
+
+@media screen and (min-width: 769px) {
+
+    #section6 {
+        margin-bottom: 36px;
+    }
+
+    .h2White2 {
+        color: $h2-white;
+        margin-bottom: 36px;
+    }
+    
+    .h2Center {
+        text-align: center;
+    }
+    
+    .button2 {
+        margin-top: 0.9%;
+        text-align: center;
+    }
+
 }
