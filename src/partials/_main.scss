@@ -30,6 +30,11 @@
     .pSize1 {
         max-width: 628px;
     }
+
+    button.button1 {
+        margin-top: 56px;
+    }
+
 }
 /* -- SECTION 2 -- */
 
@@ -135,6 +140,10 @@ iframe {
         margin-bottom: 64px;
     }
 
+    #section4 .container h2 {
+        margin: 0 0 36px 0;
+    }
+
     .guestsImgs {
         width: 33.3%;
     }
@@ -197,7 +206,7 @@ span.spanText {
         justify-content: space-around;
         align-items: center;
         text-align: center;
-        margin-top: 69px;
+        margin-top: 56px;
         margin-bottom: 34px;
     }
     .pStyle {
