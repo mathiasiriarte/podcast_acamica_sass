@@ -4,6 +4,15 @@
     margin: 29px 16px 24px 16px;
 }
 
+.containerButton1 {
+    margin-top: 0.9%;
+    text-align: center;
+}
+
+.containerButton1 button {
+    padding: 16px 90px;
+}
+
 @media screen and (min-width: 769px) {
 
     #section1 {
@@ -31,10 +40,15 @@
         max-width: 628px;
     }
 
-    button.button1 {
+    .containerButton1 {
         margin-top: 56px;
+        margin-bottom: 5px;
+        text-align: left;
     }
 
+    .containerButton1 button {
+        padding: 16px 60px;
+    }
 }
 /* -- SECTION 2 -- */
 
@@ -94,7 +108,7 @@ iframe {
 .phoneImg {
     position: relative;
     top: -99px;
-    // min-height: 400px;
+
 }
 
 @media screen and (min-width: 769px) {
@@ -103,19 +117,23 @@ iframe {
         margin-bottom: 64px;
     }
 
-    .containerAbout {
+    #section3 .containerAbout {
         position: relative;
-    }
-    .phoneImg {
-        position: relative;
-        top: -195px;
-        // min-height: 400px;
+        display: flex;
     }
 
-    .phoneLogo {
-        width: 457.6px;
-        max-width: 100%;
+    #section3 .containerAbout .phoneImg {
+        position: relative;
+        top: -195px;
+    }
+
+    #section3 .containerAbout .phoneImg .phoneLogo {
+        max-width: 457.6px;
         margin-left: 20px;
+    }
+
+    #section3 .containerAbout .about {
+        max-width: 464px;
     }
 }
 
@@ -137,6 +155,7 @@ iframe {
 @media screen and (min-width: 769px) {
 
     #section4 {
+        margin-top: -150px;
         margin-bottom: 64px;
     }
 
@@ -228,9 +247,13 @@ h2.h2White2.h2Center {
     text-align: center;
 }
 
-.button2 {
+.containerButton2 {
     margin-top: 0.9%;
     text-align: center;
+}
+
+.containerButton2 button {
+    padding: 16px 30px;
 }
 
 @media screen and (min-width: 769px) {
@@ -248,9 +271,10 @@ h2.h2White2.h2Center {
         text-align: center;
     }
     
-    .button2 {
+    .containerButton2 button{
         margin-top: 0.9%;
         text-align: center;
+        padding: 16px 70px;
     }
 
 }
