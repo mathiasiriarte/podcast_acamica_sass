@@ -23,10 +23,8 @@
         top: 45px;
         top: 0;
         right: 0;
-        padding-top: 45px;
         overflow: hidden;
         list-style: none;
-        // background: #f2f2f2;
         height: 0px;
         height: 100vh;
         transform: translateY(-100%);
@@ -34,6 +32,7 @@
     }
     header nav .navigationContainer  ul li {
         position: relative;
+        display: block;
     } 
     header nav .navigationContainer  ul li:hover {
         background: #5a5a5a;
@@ -54,7 +53,7 @@
         input {
             &:checked ~ ul{
                 background: #0000EC;
-                height: 224px;
+                height: auto;
                 transform: translateX(0);
                 transition: transform 0.5s ease-in-out;
                 margin-top: 50px;
@@ -116,7 +115,6 @@
         
         .cleanList li {
                 display: inline-block;
-                padding-left: 48px;
                 font-family: 'IBM Plex Mono', monospace;
                 font-size: 1rem;
                 color: #060A24;
