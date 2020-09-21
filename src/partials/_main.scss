@@ -70,6 +70,9 @@ iframe {
     width: auto;
     max-width: 100%;
     margin: 11px;
+    border: 0px;
+    background-color: transparent;
+    min-height: 232px;
 }
 
 @media screen and (min-width: 769px) {
@@ -93,6 +96,8 @@ iframe {
         margin-left: 50px;
         width: 584px;
         min-height: 232px;
+        border: 0px;
+        background-color: transparent;
     }
 }
 
